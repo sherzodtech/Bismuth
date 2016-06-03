@@ -1,0 +1,141 @@
+/* Генеральные стили */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    color: #444444;
+}
+
+a {
+    color: #1a0dab;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+a:visited {
+    color: #609;
+}
+
+label {
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+}
+
+.box {
+    border: #999999 solid 1px;
+}
+
+input.box {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 1px;
+}
+
+input[type="submit"] {
+    padding: 8px;
+    margin: 10px 0;
+    background: #eeeeee;
+    border: 1px solid #555555;
+    border-radius: 1px;
+}
+
+/* Верхняя часть <header> */
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background: #444444;
+}
+
+.header .menu {
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+}
+
+.header .menu ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+.header .menu ul li {
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+}
+
+.header .menu ul li a {
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    line-height: 40px;
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.header .menu ul li a:hover {
+    color: #dddddd;
+    text-decoration: none;
+    background: #666666;
+}
+
+.login {
+    margin: 10px;
+}
+
+/* Контент <content> */
+
+content {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+    min-height: 500px;
+}
+
+.content {
+    margin: 0;
+    padding: 10px 5px;
+}
+
+
+/* Нижняя часть <footer> */
+
+footer {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+    height: 100px;
+}
+
+.footer .wrapper {
+    margin: 0;
+    padding: 5px;
+}

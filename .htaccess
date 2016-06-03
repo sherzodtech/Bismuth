@@ -1,0 +1,13 @@
+adddefaultcharset utf-8
+php_flag display_errors On
+ErrorDocument 404 /index.php?page=404
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-s
+
+RewriteRule ^([^/]*)(/?)+$ index.php?page=$1 [L]
+RewriteRule ^([^/]*)/([0-9]*)(/?)+$ index.php?page=$1&num=$2 [L]
+RewriteRule ^([^/]*)/([^/]*)(/?)+$ index.php?page=$1&section=$2 [L]
+RewriteRule ^([^/]*)/([^/]*)/([A-Z,a-z,А-Я,а-я,0-9,--,_,+,&,%]*)(/?)+$ index.php?page=$1&section=$2&id=$3 [L]
